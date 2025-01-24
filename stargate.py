@@ -23,15 +23,11 @@ def create_stargate():
 
 def destroy_stargate():
     print('Destroying Stargate...')
-    # Placeholder for destroying a Stargate
-    subprocess.run(['echo', 'Stargate destroyed.'])
+    # Actual implementation to destroy a Stargate
+    # This is a placeholder for demonstration purposes
+    subprocess.run(['echo', 'Stargate with ID: 12345 destroyed'])targate
+   
 
-
-if __name__ == '__main__':
-    main()
-import os
-import sys
-import subprocess
 
 def main():
     if len(sys.argv) < 2:
