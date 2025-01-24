@@ -15,11 +15,15 @@ def main():
 
 
 def create_stargate():
-    print('Creating Stargate...')
-    # The actual implementation of creating a Stargate
-    # This is a placeholder for demonstration purposes
-    subprocess.run(['echo', 'Stargate created with ID: 12345'])
+    pr    print('Creating Stargate...')
+    stargate_id = create_stargate_on_aws()
+    print(f'Stargate created with ID: {stargate_id}')
 
+
+def create_stargate_on_aws():
+    # Actual implementation to create a Stargate on AWS
+    stargate_id = '12345'  # This is a placeholder for demonstration purposes
+    return stargate_id
 
 def destroy_stargate():
     print('Destroying Stargate...')
