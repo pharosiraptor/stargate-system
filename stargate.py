@@ -19,9 +19,9 @@ def main():
 
 def create_stargate():
     print("Creating Stargate...")
-    # Placeholder for creating a Stargate
-    subprocess.run(["echo", "Stargate created."])
-
+    # The actual implementation of creating a Stargate
+    # This is a placeholder for demonstration purposes
+    subprocess.run(["echo", "Stargate created with ID: 12345"])
 
 def destroy_stargate():
     print("Destroying Stargate...")
