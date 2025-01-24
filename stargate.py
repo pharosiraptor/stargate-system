@@ -61,6 +61,14 @@ def main():
         destroy_stargate()
     else:
         print("Unknown command.")
+        
+def list_stargates():
+    print("Listing all Stargates...")
+    # Placeholder for listing Stargates
+    # Actual implementation would list all Stargates
+    stargates = ["Stargate 1", "Stargate 2", "Stargate 3"]
+    for stargate in stargates:
+        print(stargate)
 
 
 def create_stargate():
