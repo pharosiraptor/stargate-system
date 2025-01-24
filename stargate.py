@@ -22,8 +22,23 @@ def create_stargate():
 
 def create_stargate_on_aws():
     # Actual implementation to create a Stargate on AWS
-    stargate_id = '12345'  # This is a placeholder for demonstration purposes
-    return stargate_id
+    import boto3
+
+def create_stargate_on_aws():
+    ec2 = boto3.resource('ec2')
+
+    # Create a new EC2 instance
+    instance = ec2.create_instances(
+        ImageId='ami-0c94855ba95c71c99',  # Example AMI ID
+        MinCount=1,
+        MaxCount=1,
+        InstanceType='t2.micro',
+        KeyName='your-key-pair-name'  # Replace with your key pair name
+    )
+
+    instance_id = instance[0].id
+    print(f'Stargate created on AWS with instance ID: {instance_id}')
+    return instance_id
 
 def destroy_stargate():
     print('Destroying Stargate...')
